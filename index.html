@@ -500,18 +500,36 @@
           </li>
           <li>
             <div class="fillter-ftr-icon">
-            <a href="https://www.linkedin.com/">
+              <a href="https://www.linkedin.com/">
               <svg class="fillter-ftr-social">
               <use
                 href="./images/socialmedia-icons.svg#icon-linkedin-1"
                 ></use>
               </svg>
-            </a>
+              </a>
             </div>
-            </li>
-            </div> 
+          </li>
           </ul>
-      </ul>
+            <li>
+            <div class="subscribe-input">
+            <form name="signup_form" autocomplete="on" validate class="sub-form">
+              <label class="lbl-sub">
+                <h3 class="sub-name">Subscribe</h3>
+                <input type="email" name="email" placeholder="E-mail" class="subscribe-ftr"/>
+              </label>
+              <a href="#">
+                <div class="sub">
+                <button type="submit" class="subscribe-btn">Subscribe
+                  <svg class="subscribe-svg" width="24px" height="24px">
+                    <use class="send-icon" href="./images/subscribe-send.svg#icon-send"></use>
+                  </svg>
+                </button>
+                </div>
+              </a>
+              </div>
+            </form>
+          </li>
+        </ul>
       </div>
       </div>
       </div>
@@ -523,6 +541,44 @@
                   <use href="./images/close-btn.svg#icon-close-blk" width="8px" height="8px"></use>
                 </svg>
                 </button>
+                <div class="modal-form-size">
+                  <h2 class="modal-form-head">Leave your contacts and we will call you back</h2>
+                <form>
+                <div class="lbl-size">
+                  <label class="">
+                  <h5 class="modal-id">Name</h5>
+                <input name="name" type="text" id="name-input" placeholder="" class="input-size-modal">
+                <svg>
+                  <use href="./images/modal-icon.svg#icon-person"></use>
+                </svg>
+                </label>
+                </div>
+                <div class="lbl-size">
+                  <label>
+                  <h5 class="modal-id">Phone</h5>
+                <input name="tel" type="number" id="tel-input" placeholder="" class="input-size-modal">
+                <svg>
+                  <use href="./images/modal-icon.svg#icon-phone"></use>
+                </svg>
+                </label>
+                </div>
+                <div class="lbl-size">
+                  <label>
+                  <h5 class="modal-id">Email</h5>
+                <input name="email" type="email" id="email-input" placeholder="" class="input-size-modal">
+                <svg>
+                  <use href="./images/modal-icon.svg#icon-email"></use>
+                </svg>
+                </label>
+                </div>
+                <div>
+                  <label>
+                    <h6 class="modal-id">Comment</h6>
+                  <textarea name="textarea" id="textarea-input" placeholder="Text input" class="input-text-modal" optional></textarea>
+                  </label>
+                </div>
+              </div>
+              </form>
               </div>
               </div>
     <script src="./js/modal.js"></script>

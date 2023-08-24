@@ -877,6 +877,56 @@ li {
             0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 }
 
+.modal-form-size {
+    width: 360px;
+    height: 336px;
+    padding-left: 24px;
+
+}
+
+.modal-id {
+    color: var(--border-secondary-color);
+    /* Small Text */
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.17;
+    /* 116.667% */
+    letter-spacing: 0.48px;
+}
+
+.modal-form-head {
+    width: 360px;
+    color: var(--background-third-color);
+    text-align: center;
+    /* Body Medium */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    /* 150% */
+    letter-spacing: 0.32px;
+    margin-bottom: 16px;
+    margin-top: 72px;
+}
+
+.input-size-modal {
+    width: 360px;
+    height: 40px;
+}
+
+.input-text-modal {
+    width: 360px;
+    height: 120px;
+}
+
+.lbl-size {
+    position: relative;
+    height: 58px;
+    transform: var(--transition);
+    outline: transparent;
+
+}
 .is-hidden {
     pointer-events: none;
     visibility: hidden;
@@ -920,3 +970,74 @@ li {
     transform: translateY(0);
 }
 
+.sub-form {
+    display: flex;
+    align-items: flex-end;
+}
+
+.subscribe-input {
+    display: flex;
+}
+
+.sub-name {
+    color: var(--background-main-color);
+    /* Body Medium */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    /* 150% */
+    letter-spacing: 0.32px;
+    padding-bottom: 16px;
+}
+
+.lbl-sub {
+    margin-left: 80px;
+}
+
+.subscribe-ftr {
+    width: 264px;
+    height: 40px;
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid var(--white, #FFF);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.subscribe-ftr::placeholder {
+    padding: 8px 16px;
+    color: var(--background-main-color);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.0;
+    /* 200% */
+    letter-spacing: 0.48px;
+}
+
+.subscribe-btn {
+    color: var(--background-main-color);
+    text-align: center;
+    /* Button Text */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    /* 150% */
+    letter-spacing: 0.64px;
+    width: 165px;
+    height: 40px;
+    border-radius: 4px;
+    background: var(--brand-color);
+    cursor: pointer;
+
+}
+
+.sub {
+    margin-left: 6px;
+}
+
+.subscribe-svg {
+    padding-top: 8px;
+    margin-left: 16px;
+}
