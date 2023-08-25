@@ -3,11 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap"
-      rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -543,31 +541,31 @@
                 </button>
                 <div class="modal-form-size">
                   <h2 class="modal-form-head">Leave your contacts and we will call you back</h2>
-                <form>
+                <form class="modal-form">
                 <div class="lbl-size">
                   <label class="">
                   <h5 class="modal-id">Name</h5>
-                <input name="name" type="text" id="name-input" placeholder="" class="input-size-modal">
-                <svg>
-                  <use href="./images/modal-icon.svg#icon-person"></use>
+                  <input name="name" type="text" id="name-input" placeholder="" class="input-size-modal inputs">
+                <svg class="modal-svg" width="18px" height="18px">
+                  <use class="modal-icon" href="./images/modal-icon.svg#icon-person" width="18px" height="18px"></use>
                 </svg>
                 </label>
                 </div>
                 <div class="lbl-size">
                   <label>
                   <h5 class="modal-id">Phone</h5>
-                <input name="tel" type="number" id="tel-input" placeholder="" class="input-size-modal">
-                <svg>
-                  <use href="./images/modal-icon.svg#icon-phone"></use>
+                  <input name="tel" type="number" id="tel-input" placeholder="" class="input-size-modal inputs">
+                <svg class="modal-svg" width="18px" height="18px">
+                  <use class="modal-icon" href="./images/modal-icon.svg#icon-phone" width="18px" height="18px"></use>
                 </svg>
                 </label>
                 </div>
                 <div class="lbl-size">
                   <label>
                   <h5 class="modal-id">Email</h5>
-                <input name="email" type="email" id="email-input" placeholder="" class="input-size-modal">
-                <svg>
-                  <use href="./images/modal-icon.svg#icon-email"></use>
+                  <input name="email" type="email" id="email-input" placeholder="" class="input-size-modal inputs">
+                <svg class="modal-svg" width="18px" height="18px">
+                  <use class="modal-icon" href="./images/modal-icon.svg#icon-email" width="18px" height="18px"></use>
                 </svg>
                 </label>
                 </div>
@@ -576,6 +574,17 @@
                     <h6 class="modal-id">Comment</h6>
                   <textarea name="textarea" id="textarea-input" placeholder="Text input" class="input-text-modal" optional></textarea>
                   </label>
+                </div>
+                <div>
+                  <label class="modal-con">
+                    <input type="checkbox" id="checkbox" class="modal-checkbox">
+                    <p class="modal-p">I accept the terms and conditions of the <span class="modal-span">Privacy Policy</span></p>
+                  </label>
+                </div>
+                <div class="send-btn">
+                  <a href="#">
+                    <button class="sub-btn" type="submit" id="submit">Send</button>
+                  </a>
                 </div>
               </div>
               </form>
