@@ -931,9 +931,12 @@ li {
         padding-left: 38px;
 }
 
-.input-size-modal:hover,
+
 .input-size-modal:focus {
     border: 1px solid var(--brand-color);
+}
+.input-size-modal:focus+svg {
+    fill: var(--brand-color);
 }
 .input-text-modal {
     color: var(--modal);
@@ -956,7 +959,7 @@ li {
         padding-left: 8px;
     }
     
-    .input-text-modal:hover,
+    
     .input-text-modal:focus {
         border: 1px solid var(--brand-color);
 }
@@ -999,7 +1002,6 @@ li {
     .trn-slider {
     
     color: var(--background-secondary-color);
-    font-family: Roboto;
     font-size: 16px;
     font-style: normal;
         font-weight: 400;
@@ -1110,12 +1112,32 @@ label::before {
     margin-bottom: 24px;
 }
 
+
 .modal-checkbox {
+    position: relative;
     stroke-width: 1px;
     stroke: var(--modal);
     cursor: pointer;
-}
-
+        opacity: 0;
+    }
+    
+    .check__box {
+        position: absolute;
+        stroke-width: 1px;
+        stroke: var(--modal);
+        width: 16px;
+        height: 16px;
+        overflow: hidden;
+        border: 1px solid var(--modal);
+        border-radius: 4px;
+            cursor: pointer;
+            }
+                .modal-checkbox:checked+.check__box {
+                    border-radius: 4px;
+                    background-color: var(--brand-color);
+                    fill: var(--background-main-color);
+                    background-image: url(images/check.svg.svg#icon-checkbox);
+                }
 .modal-p {
     width: 338px;
     color: var(--border-secondary-color);
