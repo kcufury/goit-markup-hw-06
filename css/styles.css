@@ -1154,7 +1154,7 @@ label::before {
     }
     
     .check__box {
-        fill: var(--background-main-color);
+        fill: var(--background-secondary-color);
             align-items: center;
             display: inline-flex;
         width: 16px;
