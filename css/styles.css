@@ -1165,7 +1165,7 @@ label::before {
 
 .modal-p {
     color: var(--brand-color);
-    text-decoration: underline;
+    text-decoration-line: underline;
 }
 
 
