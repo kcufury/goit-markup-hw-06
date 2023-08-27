@@ -543,22 +543,22 @@
                   <h2 class="modal-form-head">Leave your contacts and we will call you back</h2>
                 <form class="modal-form">
                 <div class="lbl-size">
-                  <label class="modal-id">Name</label>
-                  <input name="name" type="text" id="name-input" placeholder="" class="input-size-modal inputs">
+                  <label for="myName" class="modal-id">Name</label>
+                  <input name="name" required type="text" id="name-input"  class="input-size-modal inputs">
                 <svg class="modal-svg" width="18px" height="18px">
                   <use class="modal-icon" href="./images/modal-icon.svg#icon-person" width="18px" height="18px"></use>
                 </svg>
                 </div>
                 <div class="lbl-size">
                   <label class="modal-id">Phone</label>
-                  <input name="tel" type="number" id="tel-input" placeholder="" class="input-size-modal inputs">
+                  <input name="tel" type="number" id="tel-input"  class="input-size-modal inputs">
                 <svg class="modal-svg" width="18px" height="18px">
                   <use class="modal-icon" href="./images/modal-icon.svg#icon-phone" width="18px" height="18px"></use>
                 </svg>
                 </div>
                 <div class="lbl-size">
-                  <label class="modal-id">Email</label>
-                  <input name="email" type="email" id="email-input" placeholder="" class="input-size-modal inputs">
+                  <label for="myEmail" class="modal-id">Email</label>
+                  <input name="email" required type="email" id="email-input"  class="input-size-modal inputs">
                 <svg class="modal-svg" width="18px" height="18px">
                   <use class="modal-icon" href="./images/modal-icon.svg#icon-email" width="18px" height="18px"></use>
                 </svg>
@@ -568,11 +568,15 @@
                   <textarea name="textarea" id="textarea-input" placeholder="Text input" class="input-text-modal" optional></textarea>
                 </div>
                 <div>
-                  <label class="modal-con">
-                    <input type="checkbox" id="checkbox" class="modal-checkbox">
-                    <span class="check__box"></span>
-                    <p class="modal-p">I accept the terms and conditions of the 
-                      <span class="modal-span">Privacy Policy</span></p>
+                  <input type="checkbox" id="user-privacy" name="user-privacy" value="true" class="modal-input vis-hid">
+                  <label for="user-privacy" class="modal-con">
+                    <span class="check__box">
+                    <svg class="modal-checkbox">
+                      <use href="./images/check.svg.svg#icon-checkbox" width="16px" height="16px" ></use>
+                    </svg>
+                    </span>
+                      I accept the terms and conditions of the 
+                      <a class="modal-p">Privacy Policy.</a>
                   </label>
                 </div>
                 <div class="send-btn">
