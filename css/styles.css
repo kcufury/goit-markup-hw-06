@@ -944,7 +944,6 @@ li {
     fill: var(--brand-color);
 }
 .input-text-modal {
-    color: var(--modal);
         /* Small Text */
         font-size: 12px;
         font-weight: 400;
@@ -961,7 +960,7 @@ li {
     }
     
     .input-text-modal::placeholder {
-        padding-left: 8px;
+        color: var(--modal);
     }
     
     
@@ -1004,8 +1003,7 @@ li {
         transition: transform var(--transition);
     }
     
-    .trn-slider {
-    
+        .trn-slider {
     color: var(--background-secondary-color);
     font-size: 16px;
     font-style: normal;
@@ -1045,16 +1043,18 @@ li {
 }
 
 .subscribe-ftr {
+    color: var(--background-main-color);
     width: 264px;
     height: 40px;
     background: transparent;
     border-radius: 4px;
     border: 1px solid var(--white, #FFF);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding-left: 8px;
 }
 
 .subscribe-ftr::placeholder {
-    padding: 8px 16px;
+    padding-top: 16px;
     color: var(--background-main-color);
     font-size: 12px;
     font-style: normal;
@@ -1110,6 +1110,7 @@ label::before {
     border-radius: 2px;
     transition: background-color var(--transition);
 }
+
 
 .vis-hid {
     visibility: hidden;
@@ -1195,6 +1196,8 @@ label::before {
 }
 
 .send-btn:hover,
-.send-btn:focus {
+.sub-btn:hover,
+.send-btn:focus,
+.sub-btn:focus {
     background-color: var(--background-fourth-color);
 }
