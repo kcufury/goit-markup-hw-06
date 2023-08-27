@@ -1191,6 +1191,7 @@ label::before {
     line-height: 24px;
     /* 150% */
     letter-spacing: 0.64px;
+    cursor: pointer;
 }
 
 .send-btn:hover,
